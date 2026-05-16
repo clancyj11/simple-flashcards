@@ -1,0 +1,196 @@
+/* ===== Review modal ===== */
+.sf-review-modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 420px;
+}
+
+.sf-progress {
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.sf-card-face {
+  padding: 1.25rem;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-m);
+  background: var(--background-secondary);
+  font-size: var(--font-ui-large);
+  line-height: 1.5;
+}
+
+.sf-card-prompt {
+  font-weight: var(--font-semibold);
+}
+
+.sf-card-answer {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--background-modifier-border);
+  color: var(--text-accent);
+}
+
+.sf-cloze-blank {
+  padding: 0 0.4em;
+  border-radius: var(--radius-s);
+  background: var(--text-accent);
+  color: var(--text-accent);
+}
+
+.sf-cloze-filled {
+  font-weight: var(--font-semibold);
+  color: var(--text-accent);
+}
+
+.sf-button-row {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.sf-button-row button {
+  flex: 1;
+}
+
+.sf-rate-again { background: var(--color-red); color: var(--text-on-accent); }
+.sf-rate-hard  { background: var(--color-orange); color: var(--text-on-accent); }
+.sf-rate-good  { background: var(--color-green); color: var(--text-on-accent); }
+.sf-rate-easy  { background: var(--color-blue); color: var(--text-on-accent); }
+
+.sf-empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 2rem 0;
+}
+
+.sf-suspend {
+  align-self: center;
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+  background: transparent;
+  box-shadow: none;
+}
+
+/* ===== Card browser ===== */
+.sf-browser-modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 560px;
+}
+
+.sf-browser-search {
+  width: 100%;
+}
+
+.sf-browser-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.sf-browser-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius-m);
+  cursor: pointer;
+}
+
+.sf-browser-row:hover {
+  background: var(--background-modifier-hover);
+}
+
+.sf-browser-front {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 360px;
+}
+
+.sf-browser-meta {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.sf-browser-meta > span {
+  padding: 0 0.5em;
+  border-radius: var(--radius-s);
+  font-size: var(--font-ui-smaller);
+}
+
+/* ===== Live-preview styling ===== */
+.sf-lp-delim {
+  color: var(--text-accent);
+  font-weight: var(--font-semibold);
+}
+
+/* ===== Deck picker ===== */
+.sf-deck-modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 420px;
+}
+
+.sf-deck-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-m);
+  cursor: pointer;
+}
+
+.sf-deck-row:hover {
+  background: var(--background-modifier-hover);
+}
+
+.sf-deck-name {
+  font-weight: var(--font-semibold);
+}
+
+.sf-deck-counts {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.sf-deck-counts > span {
+  padding: 0 0.5em;
+  border-radius: var(--radius-s);
+  font-size: var(--font-ui-smaller);
+}
+
+/* ===== Inline review ===== */
+.sf-inline-hidden {
+  filter: blur(5px);
+  cursor: pointer;
+  border-radius: var(--radius-s);
+  transition: filter 80ms ease-in;
+}
+
+.sf-inline-revealed {
+  filter: none;
+}
+
+.sf-inline-bar {
+  display: inline-flex;
+  gap: 0.25rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.sf-inline-bar button {
+  padding: 0 0.5em;
+  font-size: var(--font-ui-smaller);
+  line-height: 1.6;
+}

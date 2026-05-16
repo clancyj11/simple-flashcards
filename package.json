@@ -1,0 +1,21 @@
+{
+  "name": "simple-flashcards",
+  "version": "0.1.0",
+  "description": "RemNote-style inline flashcard syntax with optional spaced repetition for Obsidian.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production"
+  },
+  "keywords": ["obsidian", "flashcards", "spaced-repetition"],
+  "license": "MIT",
+  "devDependencies": {
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/view": "^6.26.3",
+    "@types/node": "^20.11.0",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.20.2",
+    "obsidian": "^1.5.7",
+    "typescript": "^5.4.5"
+  }
+}

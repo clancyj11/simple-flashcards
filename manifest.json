@@ -1,0 +1,10 @@
+{
+  "id": "simple-flashcards",
+  "name": "Simple Flashcards",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "RemNote-style inline flashcard syntax with optional spaced repetition.",
+  "author": "Joey Clancy",
+  "authorUrl": "https://github.com/clancyj11",
+  "isDesktopOnly": false
+}
